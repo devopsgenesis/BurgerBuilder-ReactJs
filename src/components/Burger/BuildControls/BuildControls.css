@@ -1,0 +1,40 @@
+.BuildControls{
+    width:100%;
+    text-align:center;
+    background: #cf8f2e;
+    box-shadow:0 2px 2px #ccc;
+    margin:0px;
+    padding:10px 0px;
+
+}
+.OrderButton{
+    border:2px solid brown;
+    outline: none;
+    padding:10px;
+    border-radius:5px;
+    cursor:pointer;
+    font-family: inherit;
+    background-color:saddlebrown;
+
+}
+.OrderButton:disabled{
+    cursor:not-allowed;
+}
+.OrderButton:hover{
+    background: sienna;
+
+}
+.OrderButton:not(:disabled){
+    animation: enable 1s ease-in;
+}
+@keyframes enable{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
